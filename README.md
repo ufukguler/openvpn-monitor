@@ -9,6 +9,7 @@ systemctl restart apache2
 cd /var/www/html
 git clone https://github.com/ufukguler/openvpn-monitor.git
 echo "management 127.0.0.1 1194" >> /etc/openvpn/server/server.conf
+service openvpn-server@server restart
 ```
 
 ##### CentOS / RHEL
